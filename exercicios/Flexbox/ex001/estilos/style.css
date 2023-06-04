@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.container {
+    background-color: #ccc;
+    height: 500px;
+    display: flex;
+
+    flex-direction: row; /* column | row-reverse | column-reverse */
+
+    flex-wrap: wrap; /* nowrap | wrap-reverse */
+
+    /* flex-flow: row nowrap; shorthand -> direction wrap */
+
+    justify-content: flex-start; /* flex-end | center | space-between | space-around */
+
+    align-items: stretch; /* flex-start | flex-end | center | baseline */
+
+    align-content: center;
+}
+
+.item {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    width: 650px;
+    height: 50px;
+}
