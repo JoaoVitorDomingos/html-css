@@ -7,15 +7,15 @@
 
     flex-direction: row; /* column | row-reverse | column-reverse */
 
-    flex-wrap: wrap; /* nowrap | wrap-reverse */
+    flex-wrap: nowrap; /* nowrap | wrap-reverse */
 
     /* flex-flow: row nowrap; shorthand -> direction wrap */
 
     justify-content: flex-start; /* flex-end | center | space-between | space-around */
 
-    align-items: stretch; /* flex-start | flex-end | center | baseline */
+    align-items: flex-start; /* flex-start | flex-end | center | baseline */
 
-    align-content: center;
+    /* align-content: flex-start; */
 }
 
 .item {
@@ -23,6 +23,27 @@
     color: #fff;
     padding: 20px;
     margin: 5px;
-    width: 650px;
-    height: 50px;
+    height: 30px;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+
+    flex: 1 1 300px; /* grow | shrink | basis */ 
+}
+
+.article-01 {
+    flex-shrink: 3;
+}
+
+.article-02 {
+
+}
+
+.article-03 {
+
+}
+
+.article-04 {
+
 }
