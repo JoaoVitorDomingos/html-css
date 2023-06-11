@@ -7,3 +7,13 @@
     grid-template-columns: auto auto 100px 200px 30%;
     grid-template-rows: auto 20% 100px auto;
 }
+
+.cx-8 {
+    z-index: 1; /* Define a prioridade do elemento */
+    height: 300px;
+    width: 300px;
+}
+
+.cx-10 {
+    z-index: 2; /* Quanto maior o numero maior a propriedade */
+}
