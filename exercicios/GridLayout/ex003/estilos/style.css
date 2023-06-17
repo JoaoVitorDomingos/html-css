@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@import url(config.css);
+
+.grid-container {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto; /* Columns = auto é mais flexível, não tem como quebar a tela */
+    grid-template-rows: auto; /* Row = Auto é em relação à altura da tela */
+}

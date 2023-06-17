@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url(config.css);
+
+.grid-container {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+/* Grid-column e Grid-row é como se fosse uma mescla de células. Primeiro valor é a posição que o elemento começará e o último onde ele parará excluindo esse valor. */
+
+.cx-3 {
+    grid-column: 2/4; /* Este elemento está ocupando a coluna 2 e 3 */
+    grid-row: 3/5; /* Está ocupando a linha 3 e 4 */
+}
+
+.cx-4 {
+    grid-column: 3/5; /* Este elemento está na coluna 3 e se esticou (mesclou) até a coluna 5 não ocupando a mesma. O elemento está na coluna 3 e 4 */
+    grid-row: 2; /* Se encontra na linha 2 */
+}
+
+.cx-6 {
+    grid-column: 1/2; /* Se encontra na coluna 1 */
+    grid-row: 3/7; /* Ocupa a linha 3 4 e 5 */
+}
+
+.cx-11 { /* Está na coluna 1 2 3 e 4 e na linha 1 */
+    grid-column: 1/5; 
+    grid-row: 1/2;
+}
+
+.cx-12 {
+    grid-column: 2/5;
+}
+
+.cx-13 {
+    grid-column: 1/3;
+}
+
+.cx-14 {
+    grid-column: 3/5;
+}
+
+.cx-15 {
+    grid-column: 1/5;
+}
