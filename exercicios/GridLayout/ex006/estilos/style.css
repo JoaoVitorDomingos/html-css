@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import url(config.css);
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+
+    /* O tanto de coluna/linha os elementos daquela linha/coluna irão ocupar */
+    grid-template-columns: 
+                    3fr /* 1ª coluna ocupara um tamanho de 3 colunas */
+                    2fr /* 2ª coluna ocupara um tamanho de 2 colunas */
+                    1fr /* 3ª coluna ocupara um tamanho de 1 colunas */
+                    2fr /* 4ª coluna ocupara um tamanho de 2 colunas */
+                    ;
+
+
+    grid-template-rows: 
+                    2fr /* 1ª linha ocupara um tamanho de 2 linhas */ 
+                    3fr /* 2ª linha ocupara um tamanho de 3 linhas */
+                    ; /* O restante (se houver) se ajustará automaticamente com o tamanho que resta */
+}

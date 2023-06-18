@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import url(config.css);
+
+.grid-container {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.cx-1 {
+    grid-column: 1/span 3; /* O span inclui o ultimo numero, está ocupando a coluna 1 2 e 3 */
+    grid-row: 1/span 5; /* Está ocupando a linha 1 2 3 4 e 5 */
+}
