@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+div.container {
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* Horizontal */
+    justify-content: center;
+    /* Vertical */
+    align-items: center;
+}
+
+div.container div {
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}
