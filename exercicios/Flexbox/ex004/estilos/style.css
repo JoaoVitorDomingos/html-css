@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.container {
+    background-color: #eee;
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+    
+    display: flex;
+    /* Alinhamento Horizontal */
+    justify-content: space-between;
+
+    /* Alinhamento Vertical */
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 50px;
+
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* Shorthand para item */
+    flex: 1 1 100px; /* grow shrink basis */
+}
+
+#item-3 {
+    flex-shrink: 3;
+}
