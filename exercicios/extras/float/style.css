@@ -1,0 +1,41 @@
+body {
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+img {
+    width: 15%;
+    margin-bottom: 30px;
+}
+
+body > p:first-of-type::first-letter {
+    float: left;
+
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    margin-top: -20px;
+}
+
+img {
+    float: right;
+
+    margin-left: 30px;
+}
+
+div {
+    background-color: black;
+    color: white;
+    padding: 20px;
+
+    clear: both;
+}
